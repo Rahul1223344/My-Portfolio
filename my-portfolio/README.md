@@ -3,4 +3,5 @@
  - tailwindcss setup
  - homepage 
  - aboutpage 
+ - svgr plugin added
 
