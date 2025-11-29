@@ -1,11 +1,9 @@
-import React from "react";
 import "./HomePage.css";
 import R_logo from "./../assets/images/R_logo.svg?react";
 import Sun_svg from "./../assets/icons/Sun_svg.svg?react";
 import Moon_svg from "./../assets/icons/Moon_svg.svg?react";
 import Phone_svg from "./../assets/icons/Phone_svg.svg?react";
 import Whatsapp_svg from "./../assets/icons/Whatsapp_svg.svg?react";
-import A_Logo_svg from "./../assets/images/A_Logo_svg.svg?react";
 import Arrow_svg from "./../assets/icons/Arrow_svg.svg?react";
 import Linkedin_svg from "./../assets/icons/linkedin_svg.svg?react";
 import X_svg from "./../assets/icons/X_svg.svg?react";
