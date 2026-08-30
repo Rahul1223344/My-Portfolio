@@ -11,7 +11,13 @@ import InstagramIcon from "./../assets/icons/InstagramIcon.svg?react";
 import Email_svg from "./../assets/icons/Email_svg.svg?react";
 import R_svg from "./../assets/images/Light_R_Logo_Image.svg?react";
 import { NavLink } from "react-router";
+import LatestWorks from "../components/LatestWorks";
 const HomePage = () => {
+  const scrollToWorks = () => {
+  document.getElementById("latest-works")?.scrollIntoView({
+    behavior: "smooth",
+  });
+};
   return (
     <>
       <section className="flex flex-col justify-between h-screen">
@@ -83,12 +89,13 @@ const HomePage = () => {
           </ul>
         </div>
         <div className="relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
-          <button className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20">
+          <button onClick={scrollToWorks} className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20">
             Latest Works
             <Arrow_svg className="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100" />
           </button>
         </div>
       </section>
+      <LatestWorks/>
     </>
   );
 };
