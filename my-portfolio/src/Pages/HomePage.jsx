@@ -20,7 +20,7 @@ const HomePage = () => {
 };
   return (
     <>
-      <section className="flex flex-col justify-between h-screen">
+      <section   id="home" className="flex flex-col justify-between h-screen">
         <header className="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
           <R_logo />
           <div className="flex gap-4 pointer-events-auto">
